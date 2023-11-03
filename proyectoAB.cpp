@@ -69,7 +69,7 @@ void Arbol::insertaNodo(pNodo &p, string nom){
 	else if(nom < p->nombre){
 		insertaNodo(p->izq,nom);
 	}
-	else{
+	else if(nom > p->nombre){
 		insertaNodo(p->der,nom);
 	}
 }
